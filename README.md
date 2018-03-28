@@ -1,4 +1,4 @@
-# UMengAopSdk 友盟服务器消端息推送
+# UMengAopSdk 友盟服务器端消息推送
 
 ###### 特点
 
