@@ -105,6 +105,16 @@ namespace TEC.Public.Component.UMengAopSdk.Request
         /// </summary>
         [JsonProperty(PropertyName = "thirdparty_id", NullValueHandling = NullValueHandling.Ignore)]
         public string ThirdpartyId { get; set; }
+        /// <summary>
+        /// 可选，默认为false。当为true时，表示MIUI、EMUI、Flyme系统设备离线转为系统下发
+        /// </summary>
+        [JsonProperty(PropertyName = "mipush", NullValueHandling = NullValueHandling.Ignore)]
+        public bool? MIPush { get; set; }
+        /// <summary>
+        ///  可选，mipush值为true时生效，表示走系统通道时打开指定页面acitivity的完整包路径。
+        /// </summary>
+        [JsonProperty(PropertyName = "mi_activity", NullValueHandling = NullValueHandling.Ignore)]
+        public string MIActivity { get; set; }
         #endregion
 
         [JsonIgnore]
